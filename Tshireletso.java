@@ -8,7 +8,7 @@ String location ="Fourways,Craigavon AH";
 char intial ='T';
 
 
-//Displaying my variables and created a method to publish/display my information
+//2.Displaying my variables and created a method to publish/display my information
 void displayDetails() {
 System.out.println(name);
 System.out.println(19);
