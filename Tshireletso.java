@@ -1,6 +1,6 @@
 // Creating a file on myself and biographical informaion
 
-//1.Declaring variables and creating class
+//1.Declaring variables and creating class for information
 public class Tshireletso {
 String name ="Tshireletso Pakwe";
 int age=19;
