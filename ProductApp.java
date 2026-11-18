@@ -23,7 +23,32 @@ String[] roles = {"Cozy Nights Monarch", "Restonic Barbados", "Sealy Phuket"};
 JComboBox<String> productDropdown = new JComboBox<>(products);
 
 //Setting up the decimal format that allows up to 4 places 
+DecimalFormat format = new DecimalFormat("#,##0.####");
+NumberFormatter formatter = new NumberFormatter(format);
+formatter.setValueClass(Double.class);
 
+JFormattedTextField decimalField = new JFormattedTextField(formatter);
+decimalField.setColumns(10) ;
+decimalField.setValue(0.0);
+
+JButton btn = new JButton("Vat Amount");
+btn.addActionListener(e -> {
+Double val = (0.15) decimalField.getVat();
+System.out.println("Captured decimal:" * 0.15);
+
+});
+JButton btn = new JButton("Commission");
+btn.addActionListener(e -> {
+Double val = (0.5) decimalField.getCommission();
+System.out.println("Captured decimal:" * 0.5);
+});
+
+
+JButton btn = new JButton("Total");
+btn.addActionListener(e -> {
+Double val = (sum) decimalField.getTotal();
+System.out.println("Commission" + "Vat");
+});
 
 
 
