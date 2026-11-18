@@ -1,10 +1,10 @@
 // Creating a class to store information about the mattress sales
 import java.awt.*;
 import javax.swing.*;
-class solve extends JFrame implements ItemListener{
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-
-public class ProductInformation{ 
+public class ProductApp{ 
 public static void main(String[] args) {
 //Creating the main window for the JFrame
 JFrame frame = new JFrame("Information Capture");
@@ -17,8 +17,10 @@ JLabel nameLabel = new Label(" Customer Name:");
 JTextField nameField = new JTextField();
 
 JLabel productLabel = new Label(" Product Name:");
-JTextField productField = new JTextField();
+String[] roles = {"Cozy Nights Monarch", "Restonic Barbados", "Sealy Phuket"};
+JComboBox<String> productDropdown = new JComboBox<>(products);
 
+Jlabel 
 
 
 
