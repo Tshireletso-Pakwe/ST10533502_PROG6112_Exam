@@ -1,6 +1,8 @@
 // Creating a class to store information about the mattress sales
 import java.awt.*;
 import javax.swing.*;
+import javax.swing.text.NumberFormatter;
+import java.text.DecimalFormat;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -20,7 +22,7 @@ JLabel productLabel = new Label(" Product Name:");
 String[] roles = {"Cozy Nights Monarch", "Restonic Barbados", "Sealy Phuket"};
 JComboBox<String> productDropdown = new JComboBox<>(products);
 
-Jlabel 
+//Setting up the decimal format that allows up to 4 places 
 
 
 
